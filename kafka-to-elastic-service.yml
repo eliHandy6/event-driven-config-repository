@@ -32,7 +32,7 @@ kafka-consumer-config:
   # This property allows to consume data in batches
   batch-listener: true
   # We want to start listening from topic after checking the topic is already there
-  auto-startup: false
+  auto-startup: true
   # Sets the number of threads to work on consuming, required for maximum concurrency.
   # E.g. 1 topic, 4 partitions -> Set as 4
   concurrency-level: 3
