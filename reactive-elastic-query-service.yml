@@ -24,7 +24,7 @@ kafka-config:
   admin-retry-max: 1
 
 server:
-  port: 8184
+  port: 8183
 
 spring:
   webflux:
