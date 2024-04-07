@@ -8,13 +8,16 @@ server:
     context-path: /elastic-query-service
 
 spring:
+  mvc:
+    pathpattern:
+      matching-strategy: ant_path_matcher
   security:
     oauth2:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8081/auth/realms/microservices-realm
           jwk-set-uri: http://localhost:8081/auth/realms/microservices-realm/protocol/openid-connect/certs
-          
+
 elastic-query-config:
   text-field: text
 
@@ -38,8 +41,5 @@ springdoc:
 security:
   paths-to-ignore: /api-docs
 
-spring:
-  mvc:
-    pathpattern:
-      matching-strategy: ant_path_matcher
 
+  
