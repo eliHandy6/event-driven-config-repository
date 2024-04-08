@@ -35,7 +35,7 @@ spring:
             client-id: 'elastic-query-web-client'
             client-secret: '0fed21ea-592b-4da7-bbf1-087d0c7bdbc4'
             authorization-grant-type: authorization_code
-            redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
+            redirect-uri: 'http://localhost:8184/elastic-query-web-client/login/oauth2/code/keyclock'
             scope: openid
         provider:
           keycloak:
